@@ -1,0 +1,6 @@
+{
+  "name": "Promptcraft-Ai: Sonic Blueprint",
+  "description": "Dynamic Prompt Ecosystem for Hybrid Music Production. Blend Thai cultural heritage with modern sonic textures.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
