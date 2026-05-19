@@ -1,4 +1,4 @@
-import { UserCircle, CheckCircle, LogIn, LogOut } from 'lucide-react';
+import { UserCircle, CheckCircle, LogIn, LogOut, ExternalLink } from 'lucide-react';
 import { User } from 'firebase/auth';
 
 interface HeaderProps {
@@ -27,7 +27,18 @@ export default function Header({
           </div>
           Promptcraft-Ai
         </h1>
-        <p className="text-zinc-400 font-medium ml-13">The Sonic Blueprint: Hybrid Music Ecosystem</p>
+        <div className="flex flex-col">
+          <p className="text-zinc-400 font-medium ml-13">The Sonic Blueprint: Hybrid Music Ecosystem</p>
+          <a 
+            href="https://ais-dev-6owsyntzonxeny2imudr55-721391878984.asia-east1.run.app" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-[10px] text-indigo-400/60 hover:text-indigo-400 transition ml-13 flex items-center gap-1 mt-1 group"
+          >
+            <ExternalLink className="w-2.5 h-2.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+            Live Deployment: ais-dev-6owsy...asia-east1.run.app
+          </a>
+        </div>
       </div>
       
       <div className="flex items-center gap-3 w-full md:w-auto">
